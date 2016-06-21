@@ -11,8 +11,8 @@ CarrierWave.configure do |config|
     #config.fog_provider = 'fog/aws'                        # required
     config.fog_credentials = {
       provider:              'AWS',                        # required
-      :aws_access_key_id     => "AKIAJ6QC2SRYAAB546XA",
-      :aws_secret_access_key => "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",
-      :region                => "us-west-2"  }
+      :aws_access_key_id     => S3_KEY,
+      :aws_secret_access_key => S3_SECRET,
+      :region                => S3_REGION  }
     config.fog_directory  = 'buckett-demo'                          # required
 end
